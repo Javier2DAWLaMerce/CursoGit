@@ -1,0 +1,22 @@
+<p class="empleado"> Nombre: {{nombre}}</p>
+<p class="empleado"> Apellido: {{apellido}}</p>
+<p class="empleado"> Ead: {{edad < 18 ? "Menor de edad.": "Mayor de edad."}}</p>
+<p class="empleado"> Empresa: {{empresa}}</p><br>
+
+<label>Introduce la empresa  </label>
+<input type="text" [(ngModel)]="empresa">
+<!--<input type="text" #empresa (keyup)="0" [disabled]="activarBoton"  ><br><br>
+-->
+<br><br>
+{{registro}}
+<br><br>
+<label>Trabajador registrado</label>
+
+<input type="checkbox"[checked]="trabajadorAutorizado" (click)="registrOk()">
+<br>
+<label for="sexo">Sexo</label><br>
+<input type="radio" name="sexo" id="hombre" value="hombre" (click)="sexoUsuario($event)">Hombre
+<br>
+<input type="radio" name="sexo" id="mujer" value="mujer" (click)="sexoUsuario($event)">Mujer
+<br>
+{{sexo}}

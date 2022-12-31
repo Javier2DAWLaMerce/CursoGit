@@ -1,0 +1,12 @@
+.pregunta{
+    color: blue;
+    font: bold;
+    font-size:larger;
+
+}
+
+.respuesta{
+    color: rgb(255, 0, 0);
+    font: bold;
+    font-size:larger;
+}
