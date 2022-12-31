@@ -1,0 +1,19 @@
+h3{
+    text-align: center;
+}
+button{
+    margin:  0.5rem;
+    padding: 0.5rem;
+}
+input{
+    margin:  0.5rem;
+    padding: 0.5rem;
+
+}
+form{
+    border: 1px solid black;
+    margin:  0.5rem;
+    padding: 0.5rem;
+    background-color:rgb(127, 242, 255);
+    
+}
