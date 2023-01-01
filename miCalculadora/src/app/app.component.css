@@ -4,18 +4,18 @@ h3{
     font-style: italic;
 }
 button{
-    margin:  0.5rem;
-    padding: 0.5rem;
+    margin:  0.6rem;
+    padding: 0.6re;
 }
 input{
-    margin:  0.5rem;
-    padding: 0.5rem;
+    margin:  0.6rem;
+    padding: 0.6rem;
 
 }
 form{
     border: 1px solid black;
-    margin:  0.5rem;
-    padding: 0.5rem;
+    margin:  0.6rem;
+    padding: 0.6rem;
     background-color:rgb(154, 230, 151);
     
 }
