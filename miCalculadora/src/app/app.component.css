@@ -1,21 +1,21 @@
 h3{
     text-align: center;
-    color: blueviolet;
-    font-style: italic;
+    color: rgb(0, 0, 0);
 }
 button{
-    margin:  0.6rem;
-    padding: 0.6re;
+    margin:  0.5rem;
+    padding: 0.5re;
 }
 input{
-    margin:  0.6rem;
-    padding: 0.6rem;
-
+    margin:  0.5rem;
+    padding: 0.5rem;
 }
 form{
     border: 1px solid black;
-    margin:  0.6rem;
-    padding: 0.6rem;
-    background-color:rgb(154, 230, 151);
-    
+    margin:  0.5rem;
+    padding: 0.5rem;
+    background-color:rgb(189, 219, 227);
+}
+.botonera{
+    text-align: center;
 }
