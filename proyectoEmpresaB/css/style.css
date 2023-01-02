@@ -3,3 +3,8 @@ h1{
     color:rgb(255, 55, 0);
     background-color:rgb(184, 244, 186) ;
 }
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: brown;
+    font-size: large;
+}
