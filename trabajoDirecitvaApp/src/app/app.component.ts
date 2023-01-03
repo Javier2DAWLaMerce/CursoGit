@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VirtualTimeScheduler } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Trabajo Direcvita App';
+  title:string = 'Registro de usuario';
+  nombre:string="";
+  apellido:string="";
+  mensaje:string="";
+  registrado:boolean=false;
+
+  registrarUsuario(){
+
+    this.mensaje ="El usuario " +this.nombre+" "+this.apellido+" ha sido registrado."
+    this.registrado=true;
+
+  }
 }

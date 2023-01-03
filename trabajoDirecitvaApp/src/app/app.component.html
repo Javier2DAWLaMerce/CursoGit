@@ -1,1 +1,11 @@
 <h1>{{ title }}</h1>
+<form>
+<input type="text" name ="nombre" [(ngModel)]="nombre" placeholder="Nombre Usuario"><br>
+<input type="text" name ="apellido" [(ngModel)]="apellido" placeholder="Apellido Usuario"><br>
+<input type="submit" (click)="registrarUsuario()" value="Registrar">
+
+<br>
+
+<p *ngIf="registrado" class="mensajeRegistro">{{mensaje}}</p>
+
+</form>
