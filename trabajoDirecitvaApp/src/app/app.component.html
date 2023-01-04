@@ -1,11 +1,19 @@
 <h1>{{ title }}</h1>
+
 <form>
 <input type="text" name ="nombre" [(ngModel)]="nombre" placeholder="Nombre Usuario"><br>
 <input type="text" name ="apellido" [(ngModel)]="apellido" placeholder="Apellido Usuario"><br>
 <input type="submit" (click)="registrarUsuario()" value="Registrar">
+</form>
 
 <br>
 
-<p *ngIf="registrado" class="mensajeRegistro">{{mensaje}}</p>
+<p *ngIf="registrado; else sinRegistrar" class="mensajeRegistro">{{mensaje}}</p>
 
-</form>
+<ng-template #sinRegistrar>
+    <p class="mensajeRegistro">Nadie registrado</p>
+</ng-template>
+
+<ul>
+    <li *ngFor="let entrada of entradas; let i=index"> {{i+1}} {{entrada.titulo}}   </li>
+</ul>

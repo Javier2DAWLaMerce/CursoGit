@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { VirtualTimeScheduler } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +11,20 @@ export class AppComponent {
   apellido:string="";
   mensaje:string="";
   registrado:boolean=false;
+  
+  //Para simular la entrada de una base de datos definimos un array de strings
+  entradas: Array<{titulo:string}>
+
+  constructor(){//El constructor serian los strings que recibiria este array
+                //de la base de datos
+
+    this.entradas=[
+
+      {titulo:"El maravilloso lenguaje de Java"},
+      {titulo:"El excelente lenguaje de html"},
+      {titulo:"El peculiar lenguaje de css"},
+    ]
+  }
 
   registrarUsuario(){
 
