@@ -1,1 +1,23 @@
-<h1>{{ titulo }}</h1>
+<body>
+    <h1>{{ titulo }}</h1>
+    <br>
+
+<form>
+    <input type="text" placeholder="Nombre"><br>
+    <input type="text" placeholder="Apellido"><br>
+    <input type="text" placeholder="Cargo"><br>
+    <input type="number" placeholder="Salario anual"><br><br>
+    <input type="submit" value="Registrar">
+</form>
+<br>
+
+    <table>
+        <th>Posición</th> <th>Nombre</th> <th>Apellido</th> <th>Cargo</th> <th>Salario anual</th>
+
+        <tr *ngFor="let empleado of empleados; let i =index">
+            <td>{{i+1}}</td><td>{{empleado.nombre}}</td> <td>{{empleado.apellido}}</td>
+            <td>{{empleado.cargo}}</td> <td>{{empleado.salario}}</td>
+        </tr>
+    </table>
+</body>
+
