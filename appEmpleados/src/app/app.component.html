@@ -2,22 +2,30 @@
     <h1>{{ titulo }}</h1>
     <br>
 
-<form>
-    <input type="text" placeholder="Nombre"><br>
-    <input type="text" placeholder="Apellido"><br>
-    <input type="text" placeholder="Cargo"><br>
-    <input type="number" placeholder="Salario anual"><br><br>
-    <input type="submit" value="Registrar">
-</form>
-<br>
+    <form>
+        <!--Creamos un formulario con la tecnica ngModel BananaInBox-->
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre" [(ngModel)]="formularioNombre"><br>
+        <input type="text" placeholder="Apellido" name="apellido" id="apellido" [(ngModel)]="formularioApellido"><br>
+        <input type="text" placeholder="Cargo" name="cargo" id="cargo" [(ngModel)]="formularioCargo"><br>
+        <input type="number" placeholder="Salario anual" name="salario" id="salario" [(ngModel)]="formularioSalario"><br><br>
+        <!--Añadimos un botón que con un clic llame a la función para agregar empleados-->
+        <input type="submit" value="Registrar" (click)="agregarEmpleado()">
+    </form>
+    <br>
 
     <table>
-        <th>Posición</th> <th>Nombre</th> <th>Apellido</th> <th>Cargo</th> <th>Salario anual</th>
+        <th>Posición</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Cargo</th>
+        <th>Salario anual</th>
 
         <tr *ngFor="let empleado of empleados; let i =index">
-            <td>{{i+1}}</td><td>{{empleado.nombre}}</td> <td>{{empleado.apellido}}</td>
-            <td>{{empleado.cargo}}</td> <td>{{empleado.salario}}</td>
+            <td>{{i+1}}</td>
+            <td>{{empleado.nombre}}</td>
+            <td>{{empleado.apellido}}</td>
+            <td>{{empleado.cargo}}</td>
+            <td>{{empleado.salario}}</td>
         </tr>
     </table>
 </body>
-
