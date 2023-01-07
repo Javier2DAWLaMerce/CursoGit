@@ -9,6 +9,7 @@ export class AppComponent {
   title:string = 'Registro de usuario';
   nombre:string="";
   apellido:string="";
+  cargo:string="";
   mensaje:string="";
   registrado:boolean=false;
   
@@ -28,7 +29,7 @@ export class AppComponent {
 
   registrarUsuario(){
 
-    this.mensaje ="El usuario " +this.nombre+" "+this.apellido+" ha sido registrado."
+    this.mensaje ="El usuario ";
     this.registrado=true;
 
   }

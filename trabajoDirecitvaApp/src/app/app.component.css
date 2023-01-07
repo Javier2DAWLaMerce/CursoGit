@@ -4,3 +4,8 @@ h1{
 p.mensajeRegistro{
     text-align: center;
 }
+.paraDirectores{
+    color: red;
+    font-weight: bold;
+
+}
