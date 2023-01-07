@@ -12,20 +12,5 @@
         <input type="submit" value="Registrar" (click)="agregarEmpleado()">
     </form>
     <br>
-
-    <table>
-        <th>Posición</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Cargo</th>
-        <th>Salario anual</th>
-
-        <tr *ngFor="let empleado of empleados; let i =index">
-            <td>{{i+1}}</td>
-            <td>{{empleado.nombre}}</td>
-            <td>{{empleado.apellido}}</td>
-            <td>{{empleado.cargo}}</td>
-            <td>{{empleado.salario}}</td>
-        </tr>
-    </table>
+    <app-lista-empleados [empleadoLista]="empleados"></app-lista-empleados>
 </body>
