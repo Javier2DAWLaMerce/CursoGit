@@ -1,0 +1,15 @@
+<table>
+    <th>Posición</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Cargo</th>
+    <th>Salario anual</th>
+    
+    <tr *ngFor="let empleado of empleadoLista; let i =index" >
+        <td>{{i+1}}</td>
+        <td>{{empleado.nombre}}</td>
+        <td>{{empleado.apellido}}</td>
+        <td>{{empleado.cargo}}</td>
+        <td>{{empleado.salario}}</td>
+    </tr>
+</table>
